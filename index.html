@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<title>Dog Survey Form</title>
+</head>
+<body>
+	<div class="container">
+  	<header class="header">
+    <h1 id="title" class="text-center">Dog Survey Form</h1>
+    <p id="description" class="description text-center">Thank you for taking the time to help us find the dog of your dreams</p>
+  	</header>
+  	<form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your daily routine?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="active">Active</option>
+        <option value="around">Always Around</option>
+        <option value="lazy">Lazy</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend this service to a friend?</p>
+      <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Definitely</label>
+      <label>
+        <input name="user-recommend" value="maybe" type="radio" class="input-radio"/>Maybe</label>
+      <label>
+      	<input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>Not sure</label>
+    </div>
+
+    <div class="form-group">
+      <p>What are you looking for in a dog?</p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="easy">Someting Easy</option>
+        <option value="companionship">Companionship</option>
+        <option value="nothing">Nothing</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+    <p>What are some key traits you want in a dog?<span class="clue">(Check all that apply)</span></p>
+	<label>
+        <input name="prefer" value="smart" type="checkbox" class="input-checkbox"/>Smart</label>
+    <label>
+        <input name="prefer" value="eager-to-learn" type="checkbox" class="input-checkbox"/>Eager To Learn</label>
+    <label>
+        <input name="prefer" value="lazy" type="checkbox" class="input-checkbox"/>Lazy</label>
+    <label>
+        <input name="prefer" value="energetic" type="checkbox" class="input-checkbox"/>Energetic</label>
+    <label>
+        <input name="prefer" value="hyper" type="checkbox"class="input-checkbox"/>Hyper</label>
+    <label>
+        <input name="prefer" value="athletic" type="checkbox" class="input-checkbox"/>Athletic</label>
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
